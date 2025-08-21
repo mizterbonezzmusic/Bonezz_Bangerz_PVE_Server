@@ -1,0 +1,12 @@
+name: Bonezz Deployment
+tasks:
+  - name: upload_all
+    action: sftp
+    params:
+      src: ./Bonezz_AllInOne/*
+      dest: /resources/
+  - name: unzip
+    action: unzip
+    params:
+      src: /resources/Bonezz_AllInOne.zip
+      dest: /resources/
