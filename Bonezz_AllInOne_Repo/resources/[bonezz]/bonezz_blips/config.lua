@@ -1,0 +1,1 @@
+-- centralized blip settings stub
